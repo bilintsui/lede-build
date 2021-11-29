@@ -1,0 +1,20 @@
+- How to use?
+
+1. Execute "init.sh" provided here.
+2. Customize your configuration.
+3. Upload the ".config" file or create a pull request (if you are not the owner).
+
+Then the job will automatically start when push or PR merged. You can get artifacts through GitHub Action.
+
+- Why use a forked respository instead of the original one?
+
+Because the upstream repository is committed frequently, so I forked the respository to avoid this instability.
+The forked one will be updated at random time, but not too often.
+
+- What is "prebuild.sh"?
+
+Just a customizable shell script will be executed between step "Update feeds" and step "Make download".
+
+- Alternative methods to start a build job
+
+You can directly submit the task through the Action page.
